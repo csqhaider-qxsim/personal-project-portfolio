@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qasim Haider — Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer building modern websites and web applications. Portfolio of projects, freelance services, and contact." />
+  
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+<!-- Open Graph tags: control how this link looks when shared on LinkedIn, in DMs, etc. -->
+<meta property="og:title" content="Qasim Haider — Full-Stack Developer" />
+<meta property="og:description" content="I build web software and show exactly how it works. Portfolio, projects, and freelance enquiries." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yourname.dev" />
+<meta property="og:image" content="https://yourname.dev/assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a href="#top" class="logo">Qasim Haider<span class="dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="hero-eyebrow">Full-stack developer &middot; final-year CS student</p>
+        <h1 class="hero-title">I build web software —<br>and show exactly how it works.</h1>
+        <p class="hero-sub">
+          I design and build websites and web applications for businesses, individuals,
+          and personal projects. No black boxes: clean logic, clean interfaces, and code
+          you can actually read.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-ghost">Start a project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <h2 class="section-title">Featured work</h2>
+        <p class="section-lede">Two projects, two different strengths — business logic on one side, live data and modern architecture on the other.</p>
+
+        <!-- PROJECT CARD: APPRAISED -->
+        <article class="project">
+          <div class="project-media">
+            <!-- Replace with a real screenshot: assets/appraised/screenshot.png -->
+            <img src="assets/appraised/screenshot.png" alt="Appraised app screenshot" onerror="this.parentElement.classList.add('media-fallback')" />
+          </div>
+          <div class="project-body">
+            <div class="project-heading">
+              <h3>Appraised</h3>
+              <span class="project-tag-line">Device trade-in estimator</span>
+            </div>
+            <p class="project-desc">
+              Turns a device's real-world condition into an instant, itemized trade-in
+              estimate. A three-step appraisal flow walks through model, condition, and
+              faults — then breaks down exactly how each answer affected the final offer,
+              instead of handing back a black-box number.
+            </p>
+
+            <ul class="line-items">
+              <li><span>Model-aware pricing</span><span>iPhone, Galaxy, Pixel &amp; foldables</span></li>
+              <li><span>Condition adjustments</span><span>Screen, back/sides, battery, carrier lock</span></li>
+              <li><span>Fault handling</span><span>Camera, speaker, biometrics, water damage</span></li>
+              <li><span>Itemized breakdown</span><span>Shows the math behind the number</span></li>
+            </ul>
+
+            <div class="tech-tags">
+              <span>Vanilla JavaScript</span><span>HTML5</span><span>CSS3</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://device-value.netlify.app/" target="_blank" rel="noopener">Live demo &rarr;</a>
+              <a href="https://github.com/csqhaider-qxsim/device-value-checker" target="_blank" rel="noopener">GitHub &rarr;</a>
+              <!-- ^ Replace # with your real repo URL -->
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT CARD: REEL -->
+        <article class="project project-alt">
+          <div class="project-media">
+            <!-- Replace with a real screenshot: assets/reel/screenshot.png -->
+            <img src="assets/reel/screenshot.png" alt="Reel app screenshot" onerror="this.parentElement.classList.add('media-fallback')" />
+          </div>
+          <div class="project-body">
+            <div class="project-heading">
+              <h3>Reel</h3>
+              <span class="project-tag-line">Movie discovery app</span>
+            </div>
+            <p class="project-desc">
+              A movie discovery application built on the TMDB API, with a live data layer
+              and a React component architecture designed to stay responsive as that data
+              changes underneath it.
+            </p>
+
+            <ul class="line-items">
+              <li><span>Real-time search</span><span>Query TMDB's full title library</span></li>
+              <li><span>Dynamic sorting</span><span>By rating and release timeline</span></li>
+              <li><span>Detailed movie views</span><span>Rich media, metadata, user ratings</span></li>
+              <li><span>Reusable components</span><span>e.g. MovieCard.jsx, StarRating.jsx</span></li>
+            </ul>
+
+            <div class="tech-tags">
+              <span>React</span><span>Vite</span><span>JavaScript (ES6+)</span><span>TMDB API</span>
+              <!-- Only list CSS3/Tailwind here if that's actually what you used -->
+            </div>
+
+            <div class="project-actions">
+              <a href="https://reel-movie.netlify.app/" target="_blank" rel="noopener">Live demo &rarr;</a>
+              <a href="https://github.com/csqhaider-qxsim/movie-rating-app" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section section-shaded" id="services">
+      <div class="wrap">
+        <h2 class="section-title">What I can build</h2>
+        <p class="section-lede">Rather than a list of languages, here's what that translates to for a client.</p>
+
+        <div class="services-grid">
+          <div class="service">
+            <h3>Business &amp; brochure sites</h3>
+            <p>Services, pricing, gallery, opening hours, location, and a contact or booking flow — built to look commissioned, not templated.</p>
+          </div>
+          <div class="service">
+            <h3>Interactive web apps</h3>
+            <p>Multi-step forms, calculators, and tools with real conditional logic behind them — not just static pages.</p>
+          </div>
+          <div class="service">
+            <h3>Data-driven front ends</h3>
+            <p>Search, filter, and sort against a live API, with an interface that stays responsive as the underlying data changes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="wrap about-wrap">
+        <h2 class="section-title">About</h2>
+        <p>
+          I'm a Computer Science student going into my final year, building toward
+          freelance and graduate development work. I like projects where the interesting
+          part is the logic — pricing rules, data flows, decisions a user needs to
+          understand, not just click through.
+        </p>
+        <p>
+          This site is one of my projects too: it's a living document of what I can build
+          right now, and it'll grow as I take on stronger ones.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-shaded" id="skills">
+      <div class="wrap">
+        <h2 class="section-title">Skills &amp; technologies</h2>
+        <div class="skills-columns">
+  <div>
+    <h4>Frontend</h4>
+    <ul class="plain-list">
+      <li>JavaScript (ES6+)</li>
+      <li>React</li>
+      <li>HTML5 / CSS3</li>
+      <li>Vite</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Backend</h4>
+    <ul class="plain-list">
+      <li>Node.js</li>
+      <li>Java / Spring</li>
+      <li>REST APIs</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Deployment &amp; infra</h4>
+    <ul class="plain-list">
+      <li>Netlify</li>
+      <li>DigitalOcean</li>
+      <li>Namecheap (domains &amp; DNS)</li>
+      <li>Git &amp; GitHub</li>
+    </ul>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="wrap contact-wrap">
+        <h2 class="section-title">Start a project</h2>
+        <p class="section-lede">
+          Tell me what you need — I'll reply by email. No form-processing backend required.
+        </p>
+
+        <!-- V1: handled by Netlify Forms — no backend or third-party account needed. -->
+        <form
+          class="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          action="/thanks.html"
+        >
+          <!-- required so Netlify can associate a submission with this form -->
+          <input type="hidden" name="form-name" value="contact" />
+          <!-- honeypot field: real users never see or fill this, bots often do -->
+          <p class="hidden-field">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-row">
+            <label for="project">Business / project</label>
+            <input type="text" id="project" name="project" />
+          </div>
+          <div class="form-row">
+            <label for="details">What do you need?</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+          </div>
+          <div class="form-row form-row-split">
+            <div>
+              <label for="budget">Budget</label>
+              <input type="text" id="budget" name="budget" />
+            </div>
+            <div>
+              <label for="deadline">Deadline</label>
+              <input type="text" id="deadline" name="deadline" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send enquiry</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-wrap">
+      <span>&copy; <span id="year"></span> Qasim Haider</span>
+      <div class="footer-links">
+        <a href="https://github.com/csqhaider-qxsim" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/cs-muhammad-paras-haider/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:cs.qhaider@gmail.com">cs.qhaider@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
