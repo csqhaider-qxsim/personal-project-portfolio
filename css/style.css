@@ -351,3 +351,80 @@ input:focus, textarea:focus { border-color: var(--blue); }
   color: var(--ink-soft);
 }
 .footer-links { display: flex; gap: 20px; }
+
+/* =========================================================
+   NEW ENHANCEMENTS: BADGES, HOVER EFFECTS & UI POLISH
+   ========================================================= */
+
+/* Availability Status Badge */
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(47, 95, 219, 0.08);
+  color: var(--blue);
+  border: 1px solid rgba(47, 95, 219, 0.2);
+  border-radius: 9999px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(47, 95, 219, 0.25);
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(47, 95, 219, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(47, 95, 219, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(47, 95, 219, 0); }
+}
+
+/* Interactive Card & Link Animations */
+.btn, .nav-links a, .tech-tags span, input, textarea {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-media {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover .project-media {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -10px rgba(22, 26, 35, 0.12);
+}
+
+.project-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--blue);
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.project-actions a:hover {
+  color: var(--blue-dark);
+  text-decoration: none;
+  transform: translateX(3px);
+}
+
+/* Form Polish */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(47, 95, 219, 0.12);
+}
+
+@media (max-width: 540px) {
+  .form-row-split {
+    flex-direction: column;
+    gap: 18px;
+  }
+}

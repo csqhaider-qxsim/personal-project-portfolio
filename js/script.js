@@ -17,3 +17,14 @@ navLinks.querySelectorAll('a').forEach((link) => {
 
 // ---- Footer year ----
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// ---- Smooth Scroll Behavior ----
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
