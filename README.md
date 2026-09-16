@@ -3,7 +3,7 @@
 My personal developer portfolio, showcasing projects, skills, and a way to get in touch
 for freelance work.
 
-🔗 Live site: https://your-netlify-url.netlify.app  (update once deployed)
+🔗 Live site: https://personal-portfolio-qh.netlify.app/  
 
 ## Built with
 - HTML5, CSS3, JavaScript
