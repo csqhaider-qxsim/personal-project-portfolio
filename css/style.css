@@ -327,7 +327,7 @@ p { margin: 0 0 1em; }
 .form-row-split { flex-direction: row; gap: 18px; }
 .form-row-split > div { flex: 1; display: flex; flex-direction: column; gap: 6px; }
 label { font-size: 0.85rem; font-weight: 600; color: var(--ink-soft); }
-input, textarea {
+input, textarea, select {
   font-family: var(--font-body);
   font-size: 0.95rem;
   padding: 11px 12px;
@@ -335,8 +335,17 @@ input, textarea {
   border-radius: var(--radius);
   background: var(--paper);
   color: var(--ink);
+  width: 100%;
 }
-input:focus, textarea:focus { border-color: var(--blue); }
+select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%204A4F5C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+input:focus, textarea:focus, select:focus { border-color: var(--blue); }
 
 /* =========================================================
    FOOTER
